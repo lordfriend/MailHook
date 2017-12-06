@@ -1,0 +1,40 @@
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Users Environment Variables
+.lock-wscript
+
+# OS generated files #
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Node Files #
+/node_modules
+npm-debug.log
+
+# Coverage #
+/coverage/
+
+# Dist #
+/dist/**
+
+# IDE #
+.idea/
+*.swp
+.vscode
+
+# config #
+/config/config.yml
+/config/sender.yml
+
+# database #
+/database/*
+!/database/readme.md

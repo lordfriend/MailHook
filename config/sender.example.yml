@@ -1,0 +1,9 @@
+options:
+  host: # host of SMTP server
+  port: # port of SMTP server
+  auth: # auth method
+    type: login # auth with username and password see nodemailer
+    user: # username
+    pass: # password
+  secure: false # if false use STARTTLS, if true will try to use SSL/TLS
+address: # the sender email address, mailhook@yourdomain.com

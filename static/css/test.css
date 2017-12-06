@@ -1,0 +1,152 @@
+div.m16021787b445ef6e div, div.m16021787b445ef6e img, div.m16021787b445ef6e span {
+    box-sizing: border-box
+}
+
+div.m16021787b445ef6e img {
+    border: none
+}
+
+div.m16021787b445ef6e body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "PingFang SC", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Source Han Sans TC", "WenQuanYi Micro Hei", "Helvetica", "Droid Sans", 'sans-serif'
+}
+
+div.m16021787b445ef6e .m_-4383709352565548003container {
+    display: block;
+    max-width: 1127px !important;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box
+}
+
+@media only screen and (max-width: 767px) {
+    div.m16021787b445ef6e .m_-4383709352565548003container {
+        width: auto
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    div.m16021787b445ef6e .m_-4383709352565548003container {
+        width: 723px
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    div.m16021787b445ef6e .m_-4383709352565548003container {
+        width: 933px
+    }
+}
+
+@media only screen and (min-width: 1201px) {
+    div.m16021787b445ef6e .m_-4383709352565548003container {
+        width: 1127px
+    }
+}
+
+div.m16021787b445ef6e .m_-4383709352565548003title-bar {
+    padding: 0.5rem 1rem 0 1rem
+}
+
+div.m16021787b445ef6e .m_-4383709352565548003episode-content {
+    display: block
+}
+
+div.m16021787b445ef6e .m_-4383709352565548003thumbnail-holder {
+    display: block;
+    padding: 1rem
+}
+
+div.m16021787b445ef6e .m_-4383709352565548003thumbnail-holder > img {
+    display: block;
+    width: 100%;
+    height: auto
+}
+
+div.m16021787b445ef6e .m_-4383709352565548003title-wrapper {
+    font-size: 1.2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem
+}
+
+div.m16021787b445ef6e .m_-4383709352565548003eps-number {
+    display: inline-block;
+    margin-right: 1em;
+    color: #99a1af
+}
+
+div.m16021787b445ef6e .m_-4383709352565548003eps-title {
+    display: inline-block;
+    margin-right: 1em;
+    color: #222222
+}
+
+div.m16021787b445ef6e .m_-4383709352565548003eps-title-original {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #9c9c9c
+}
+
+div.m16021787b445ef6e .m_-4383709352565548003section-header {
+    padding: 0.2rem 1.2rem
+}
+
+div.m16021787b445ef6e .m_-4383709352565548003bangumi-info {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 2rem
+}
+
+div.m16021787b445ef6e .m_-4383709352565548003bangumi-cover {
+    width: 25%;
+    float: left;
+    padding-left: 1.2rem
+}
+
+div.m16021787b445ef6e .m_-4383709352565548003bangumi-cover > img {
+    width: 100%;
+    height: auto;
+    display: block
+}
+
+div.m16021787b445ef6e .m_-4383709352565548003bangumi-info > .m_-4383709352565548003info {
+    width: 75%;
+    padding: 0 1.2rem 0 3rem;
+    float: left
+}
+
+div.m16021787b445ef6e .m_-4383709352565548003bangumi-info .m_-4383709352565548003title {
+    display: block;
+    font-size: 2rem;
+    color: #4d95d6;
+    text-decoration: none
+}
+
+div.m16021787b445ef6e .m_-4383709352565548003bangumi-info .m_-4383709352565548003title:hover {
+    color: #97bbf7
+}
+
+div.m16021787b445ef6e .m_-4383709352565548003bangumi-info .m_-4383709352565548003title-original {
+    font-size: 1.5rem;
+    color: #636363
+}
+
+div.m16021787b445ef6e .m_-4383709352565548003bangumi-info .m_-4383709352565548003eps {
+    font-size: 1.2rem;
+    color: #444444
+}
+
+div.m16021787b445ef6e .m_-4383709352565548003footer {
+    margin: 0 1.2rem 4rem 1.2rem;
+    border-top: 1px solid #c8c8c8;
+    padding-top: 1.5rem
+}
+
+div.m16021787b445ef6e .m_-4383709352565548003footer > a {
+    color: #4d95d6;
+    text-decoration: none
+}
+
+div.m16021787b445ef6e .m_-4383709352565548003footer > a:hover {
+    color: #97bbf7
+}

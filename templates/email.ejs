@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= subject %></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        div, img, span {
+            box-sizing: border-box;
+        }
+        img {
+            border: none;
+        }
+        body {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "PingFang SC", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Source Han Sans TC", "WenQuanYi Micro Hei", "Helvetica", "Droid Sans", 'sans-serif';
+        }
+        .clearfix {
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        .container {
+            position: relative;
+            display: block;
+            max-width: 1127px !important;
+            margin-left: auto;
+            margin-right: auto;
+            box-sizing: border-box;
+        }
+        .container:after,
+        .container:before {
+            box-sizing: border-box;
+        }
+        /* mobile */
+        @media only screen and (max-width: 767px) {
+            .container {
+                width: auto;
+            }
+        }
+        /* tablet */
+        @media only screen and (min-width: 768px) and (max-width: 991px) {
+            .container {
+                width: 723px;
+            }
+        }
+
+        /* small monitor */
+        @media only screen and (min-width: 992px) and (max-width: 1200px) {
+            .container {
+                width: 933px;
+            }
+        }
+
+        /* large monitor */
+        @media only screen and (min-width: 1201px) {
+            .container {
+                width: 1127px;
+            }
+        }
+        .title-bar {
+            padding: 0.5rem 1rem 0 1rem;
+        }
+        .episode-content {
+            display: block;
+            position: relative;
+        }
+        .thumbnail-holder {
+            display: block;
+            padding: 1rem;
+        }
+        .thumbnail-holder > img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .title-wrapper {
+            font-size: 1.2rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+        .eps-number {
+            display: inline-block;
+            margin-right: 1em;
+            color: #99a1af
+        }
+        .eps-title {
+            display: inline-block;
+            margin-right: 1em;
+            color: #222222
+        }
+        .eps-title-original {
+            display: inline-block;
+            font-size: 0.9rem;
+            color: #9c9c9c;
+        }
+        .section-header {
+            padding: 0.2rem 1.2rem;
+        }
+        .bangumi-info {
+            display: block;
+            position: relative;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+        }
+        .bangumi-cover {
+            width: 25%;
+            float: left;
+            padding-left: 1.2rem;
+        }
+        .bangumi-cover > img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .bangumi-info > .info {
+            width: 75%;
+            padding: 0 1.2rem 0 3rem;
+            float: left
+        }
+        .bangumi-info .title {
+            display: block;
+            font-size: 2rem;
+            color: #4d95d6;
+            text-decoration: none;
+        }
+        .bangumi-info .title:active {
+            color: #4d95d6;
+        }
+        .bangumi-info .title:hover,
+        .bangumi-info .title:focus {
+            color: #97bbf7;
+        }
+        .bangumi-info .title-original {
+            font-size: 1.5rem;
+            color: #636363;
+        }
+        .bangumi-info .eps {
+            font-size: 1.2rem;
+            color: #444444;
+        }
+        .footer {
+            margin: 0 1.2rem 4rem 1.2rem;
+            border-top: 1px solid #c8c8c8;
+            padding-top: 1.5rem;
+        }
+        .footer > a,
+        .footer > a:active {
+            color: #4d95d6;
+            text-decoration: none;
+        }
+        .footer > a:hover,
+        .footer > a:focus {
+            color: #97bbf7;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1 class="title-bar">
+        <%= siteName %>
+    </h1>
+    <a class="episode-content" href="<%= episode.url %>" target="_blank">
+        <div class="thumbnail-holder">
+            <img src="<%=episode.thumbnail_image.url%>" alt="">
+        </div>
+        <div class="title-wrapper">
+            <div class="eps-number">
+                第<%= episode.episode_no %>话
+            </div>
+            <div class="eps-title">
+                <%= episode.name_cn %>
+            </div>
+            <div class="eps-title-original">
+                <%= episode.name %>
+            </div>
+        </div>
+    </a>
+    <h2 class="section-header">番組信息</h2>
+    <div class="bangumi-info">
+        <div class="bangumi-cover">
+            <img src="<%= episode.bangumi.cover_image.url %>" alt="">
+        </div>
+        <div class="info">
+            <a class="title" href="<%= siteHost %>/bangumi/<%= episode.bangumi.id %>" target="_blank"><%= episode.bangumi.name_cn %></a>
+            <div class="title-original"><%= episode.bangumi.name %></div>
+            <div class="eps">共<%= episode.bangumi.eps %>话</div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="footer">
+        <%= siteName %> 会在你关注的新番下载完成时向您发送邮件，如果你不想继续收到这些更新，你可以在 <a href="<%= siteHost %>/settings/user">这里</a> 取消订阅。
+    </div>
+    <div class="clearfix"></div>
+</div>
+</body>
+</html>

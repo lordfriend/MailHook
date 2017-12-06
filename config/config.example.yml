@@ -1,0 +1,4 @@
+siteName: localhost:5000
+siteHost: http://localhost:5000
+sharedSecret: hikari
+sentry_dsn: # you dsn here

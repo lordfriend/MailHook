@@ -1,0 +1,91 @@
+div, img, span, button {
+    box-sizing: border-box;
+}
+img {
+    border: none;
+}
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "PingFang SC", "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC", "Source Han Sans TC", "WenQuanYi Micro Hei", "Helvetica", "Droid Sans", 'sans-serif';
+}
+.container {
+    position: relative;
+    display: block;
+    max-width: 1127px !important;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+.container:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.container:after,
+.container:before {
+    box-sizing: border-box;
+}
+/* mobile */
+@media only screen and (max-width: 767px) {
+    .container {
+        width: auto;
+    }
+}
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 723px;
+    }
+}
+
+/* small monitor */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .container {
+        width: 933px;
+    }
+}
+
+/* large monitor */
+@media only screen and (min-width: 1201px) {
+    .container {
+        width: 1127px;
+    }
+}
+
+.subscribe-form {
+    display: block;
+    width: 100%;
+    color: #414141;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+.subscribe-form button[type="submit"] {
+    background-color: #1b1c1d;
+    color: #fff;
+    text-shadow: none;
+    background-image: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: inline-block;
+    min-height: 1em;
+    outline: 0;
+    border: none;
+    vertical-align: baseline;
+    padding: .7851429em 1.5em .78514729em;
+    text-transform: none;
+    font-weight: 700;
+    line-height: 1em;
+    font-style: normal;
+    text-align:  center;
+    text-decoration: none;
+    border-radius: .2851429em;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    overflow: visible;
+}
