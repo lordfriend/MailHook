@@ -151,6 +151,15 @@ export class LokiDB {
             return [];
         }
     }
+
+    removeUser(tokenId: string): void {
+        const userCollection = this.loki.getCollection(COLLECTION_NAME.USER_COLLECTION);
+        try {
+            userCollection.findAndRemove({token_id: tokenId});
+        } catch (error) {
+            console.error(error);
+        }
+    }
 }
 
 export const lokiDB = new LokiDB();

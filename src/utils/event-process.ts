@@ -47,6 +47,10 @@ function onTokenAdded(favoriteList: Favorite[], email: string, tokenId: string) 
     lokiDB.updateFavorite(favoriteList);
 }
 
+function onTokenRemoved(tokenId: string) {
+    lokiDB.removeUser(tokenId);
+}
+
 function onEpisodeDownloaded(episode: Episode) {
     console.log(util.inspect(episode, {depth: null}));
     let favoriteList = lokiDB.getFavoriteListByBangumiId(episode.bangumi.id);
@@ -79,6 +83,9 @@ export function eventProcess(eventType: string, event: any) {
             break;
         case EventType.TYPE_TOKEN_ADDED:
             onTokenAdded(event.favorites, event.email, event.token_id);
+            break;
+        case EventType.TYPE_TOKEN_REMOVED:
+            onTokenRemoved(event.token_id);
             break;
         case EventType.TYPE_EPISODE_DOWNLOADED:
             onEpisodeDownloaded(event.episode);

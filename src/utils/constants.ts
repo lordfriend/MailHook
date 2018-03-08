@@ -4,6 +4,7 @@ export class EventType {
     static TYPE_KEEP_ALIVE = 'KEEP_ALIVE';
     static TYPE_INITIAL = 'INITIAL';
     static TYPE_TOKEN_ADDED = 'TOKEN_ADDED';
+    static TYPE_TOKEN_REMOVED = 'TOKEN_REMOVED';
 }
 
 export class Status {
